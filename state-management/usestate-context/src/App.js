@@ -1,13 +1,14 @@
 
 import './App.css';
 import { CounterButton } from './components/CounterButton';
+import { CounterProvider } from './context/CounterProvider';
 
 function App() {
   return (
-    <div className="App">
+    <CounterProvider className="App">
       <h2>State Managment - useState</h2>
       <CounterButton />
-    </div>
+    </CounterProvider>
   );
 }
 
