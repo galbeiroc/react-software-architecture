@@ -20,10 +20,8 @@ file then tells the browser to load our React scripts.
 |           Client-Side Rendering CSR           |           Server-Side Rendering SSR           |
 |-----------------------------------------------|-----------------------------------------------|
 | Renders app to HTML in the user's browser     | Renders app to HTML on the server.            |
-|                                               |                                               |
-| Loads *index.html* from server, loads JS      | Runs JS bundle, loads data, creates HTML      |
+| Loads *index.html* from server, loads JS<br>  | Runs JS bundle, loads data, creates HTML<br>  |
 | bundle from server, runs bundle, displays     | document, sends to client side.               |
 | app, loads data.                              |                                               |
-|                                               |                                               |
-| Less strain on the server, but genenally      | Faster user experience and better for SEO,    |
+| Less strain on the server, but genenally<br>  | Faster user experience and better for SEO,<br>|
 | slower user experience.                       | but more strain on server.                    |
