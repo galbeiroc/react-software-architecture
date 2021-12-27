@@ -1,14 +1,20 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Switch, Link, Route } from "react-router-dom";
 
 import About from "./pages/About";
 import Article from "./pages/Article";
 import Home from "./pages/Home";
 
+const BigGreenHeader = styled.h1`
+  color: green;
+  font-size: 50px;
+`;
+
 function App() {
   return (
     <>
-      <h1>Server-side Rendering</h1>
+      <BigGreenHeader>Server-side Rendering</BigGreenHeader>
       <ul>
         <li>
           <Link to="/">Home</Link>
