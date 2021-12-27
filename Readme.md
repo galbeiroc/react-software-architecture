@@ -17,13 +17,8 @@ file then tells the browser to load our React scripts.
 
 * When our server is the one that renders our React code to HTML instead of the user's broswer.
 
-|           Client-Side Rendering CSR           |           Server-Side Rendering SSR           |
-|-----------------------------------------------|-----------------------------------------------|
-| Renders app to HTML in the user's browser     | Renders app to HTML on the server.            |
-|                                               |                                               |
-| Loads *index.html* from server, loads JS      | Runs JS bundle, loads data, creates HTML      |
-| bundle from server, runs bundle, displays     | document, sends to client side.               |
-| app, loads data.                              |                                               |
-|                                               |                                               |
-| Less strain on the server, but genenally      | Faster user experience and better for SEO,    |
-| slower user experience.                       | but more strain on server.                    |
+|                                        Client-Side Rendering CSR                                   |                        Server-Side Rendering SSR                         |
+|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| Renders app to HTML in the user's browser                                                          | Renders app to HTML on the server.                                       |
+| Loads *index.html* from server, loads JS bundle from server, runs bundle, displays app, loads data.| Runs JS bundle, loads data, creates HTMLdocument, sends to client side.  |
+| Less strain on the server, but genenally slower user experience.                                   | Faster user experience and better for SEO, but more strain on server.    |
