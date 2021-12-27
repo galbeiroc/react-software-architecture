@@ -48,3 +48,6 @@ How an application handles the data needs of its components, with regards to loa
 * "Large" state
   1. Redux
   2. MobX
+
+###### recoil
+Recoil has two pilars atom and selectors
