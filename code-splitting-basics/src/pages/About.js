@@ -16,13 +16,17 @@ const About = () => {
     <div>
       <h1>About</h1>
       {show && (
-        <ErrorBoundary>
-          <Suspense fallback={<p>Loading...</p>}>
+        <Suspense fallback={<p>Loading...</p>}>
+          <ErrorBoundary>
             <One />
+          </ErrorBoundary>
+          <ErrorBoundary>
             <Two/>
+          </ErrorBoundary>
+          <ErrorBoundary>
             <Three />
-          </Suspense>
-        </ErrorBoundary>
+          </ErrorBoundary>
+        </Suspense>
       )}
       <button onClick={() =>setShow(!show)}>Show</button>
     </div>
